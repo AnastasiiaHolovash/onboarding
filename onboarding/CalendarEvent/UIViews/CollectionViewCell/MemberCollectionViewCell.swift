@@ -73,22 +73,3 @@ final class MemberCollectionViewCell: UICollectionViewCell, BindableCell {
     contentView.addSubview(memberStackView, withEdgeInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
   }
 }
-
-extension String {
-    
-    func height(with width: CGFloat, font: UIFont) -> CGFloat {
-        
-        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
-        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
-
-        return ceil(boundingBox.height)
-    }
-
-    func width(with height: CGFloat, font: UIFont) -> CGFloat {
-        
-        let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
-        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
-
-        return ceil(boundingBox.width)
-    }
-}

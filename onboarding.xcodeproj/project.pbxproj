@@ -31,6 +31,7 @@
 		5D0750942625BC460059D378 /* CollectionViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0750932625BC460059D378 /* CollectionViewCell1.swift */; };
 		5D07509A2625C1940059D378 /* CollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0750992625C1940059D378 /* CollectionViewCell2.swift */; };
 		5D07509D2625D18D0059D378 /* CollectionViewCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D07509C2625D18D0059D378 /* CollectionViewCell3.swift */; };
+		5D0750A02625E7D20059D378 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D07509F2625E7D20059D378 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		5D0750932625BC460059D378 /* CollectionViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell1.swift; sourceTree = "<group>"; };
 		5D0750992625C1940059D378 /* CollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell2.swift; sourceTree = "<group>"; };
 		5D07509C2625D18D0059D378 /* CollectionViewCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell3.swift; sourceTree = "<group>"; };
+		5D07509F2625E7D20059D378 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				5D07506A2624D3100059D378 /* UICollectionViewDiffableDataSourceExtensions.swift */,
 				5D07504426245D610059D378 /* UIViewExtensions.swift */,
 				5D0750732624D5B40059D378 /* Reusable.swift */,
+				5D07509F2625E7D20059D378 /* StringExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				5D07502C2624501F0059D378 /* AppDelegate.swift in Sources */,
 				5D07507C2625662B0059D378 /* InformationView.swift in Sources */,
 				5D0750782624DDB10059D378 /* BindableCell.swift in Sources */,
+				5D0750A02625E7D20059D378 /* StringExtension.swift in Sources */,
 				5D07502E2624501F0059D378 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,7 +13,7 @@ class DistinctSectionsViewController: UIViewController {
     case grig, list3, list5
   }
   
-  var dataSource: UICollectionViewDiffableDataSource<SectionLayoutKind, Int>! = nil
+  private var dataSource: UICollectionViewDiffableDataSource<SectionLayoutKind, Int>?
   private lazy var collectionView: UICollectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
   
   override func viewDidLoad() {
@@ -69,7 +69,6 @@ extension DistinctSectionsViewController {
   func configureDataSource() {
     
     let collectionViewCell1 = UICollectionView.CellRegistration<CollectionViewCell1, Int> { (cell, indexPath, identifier) in
-      // Populate the cell with our item description.
       cell.render(props: CollectionViewCell1.Props(name: "Name\(identifier)",
                                                    descriptionTest: "Some description test \(identifier)",
                                                    image: UIImage()))
@@ -97,7 +96,7 @@ extension DistinctSectionsViewController {
     }
     
     // initial data
-    let itemsPerSection = 10
+    let itemsPerSection = 12
     var snapshot = NSDiffableDataSourceSnapshot<SectionLayoutKind, Int>()
     SectionLayoutKind.allCases.forEach {
       snapshot.appendSections([$0])
@@ -105,7 +104,7 @@ extension DistinctSectionsViewController {
       let itemUpperbound = itemOffset + itemsPerSection
       snapshot.appendItems(Array(itemOffset..<itemUpperbound))
     }
-    dataSource.apply(snapshot, animatingDifferences: false)
+    dataSource?.apply(snapshot, animatingDifferences: false)
   }
 }
 
