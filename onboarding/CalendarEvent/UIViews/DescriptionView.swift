@@ -111,4 +111,3 @@ struct DescriptionViewProvider: PreviewProvider {
     .previewLayout(.fixed(width: 327, height: 168))
   }
 }
-

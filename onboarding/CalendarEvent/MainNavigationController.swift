@@ -15,8 +15,10 @@ final class MainNavigationController: UINavigationController {
   }
   
   func setup() {
-    view.backgroundColor = Asset.systemLight.color
-    setViewControllers([CalendarEventViewController()], animated: true)
-    navigationBar.barTintColor = Asset.systemLight.color
+//    view.backgroundColor = Asset.systemLight.color
+//    setViewControllers([CalendarEventViewController()], animated: true)
+//    navigationBar.barTintColor = Asset.systemLight.color
+    
+    setViewControllers([DistinctSectionsViewController()], animated: true)
   }
 }
