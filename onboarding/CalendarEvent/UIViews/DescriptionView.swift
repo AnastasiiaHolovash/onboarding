@@ -9,7 +9,7 @@ import UIKit
 
 final class DescriptionView: UIView {
   
-  struct Props: Equatable, Hashable {
+  struct Props {
     let avatarImage: UIImage
     let userName: String
     let userRole: String
@@ -37,12 +37,6 @@ final class DescriptionView: UIView {
     nameLabel.text = props.userName
     roleLabel.text = props.userRole
     descriptionLabel.text = props.meetingDescription
-  }
-  
-  override func layoutSubviews() {
-    super.layoutSubviews()
-    
-    avatarImageView.rounded(20)
   }
   
   private func commonSetup() {

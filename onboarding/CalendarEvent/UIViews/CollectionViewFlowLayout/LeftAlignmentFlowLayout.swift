@@ -1,70 +1,11 @@
 //
-//  MembersCollectionView.swift
+//  LeftAlignmentFlowLayout.swift
 //  onboarding
 //
 //  Created by Anastasia Holovash on 2021-04-12.
 //
 
 import UIKit
-
-//final class MembersCollectionView: UICollectionView {
-//  
-//  override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
-//    super.init(frame: frame, collectionViewLayout: layout)
-//    
-//    self.backgroundColor = Asset.systemLight.color
-//    self.register(cell: MemberCollectionViewCell.self)
-//  }
-//  
-//  convenience init() {
-//    self.init(frame: .zero, collectionViewLayout: CollectionViewFlowLayout())
-//  }
-//  
-//  required init?(coder: NSCoder) {
-//    fatalError("init(coder:) has not been implemented")
-//  }
-//}
-//
-//class CollectionViewFlowLayout: UICollectionViewFlowLayout {
-//  
-//  required override init() {
-//    super.init()
-//    setup()
-//  }
-//  
-//  required init?(coder aDecoder: NSCoder) {
-//    super.init(coder: aDecoder)
-//    setup()
-//  }
-//  
-//  private func setup() {
-//    estimatedItemSize = UICollectionViewFlowLayout.automaticSize
-//    minimumLineSpacing = 16
-//    minimumInteritemSpacing = 16
-//  }
-//  
-//  override func layoutAttributesForElements(
-//    in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-//    
-//    guard let att = super.layoutAttributesForElements(in:rect) else {
-//      return []
-//    }
-//    var x: CGFloat = sectionInset.left
-//    var y: CGFloat = -1.0
-//    
-//    for a in att {
-//      if a.representedElementCategory != .cell {
-//        continue
-//      }
-//      
-//      if a.frame.origin.y >= y { x = sectionInset.left }
-//      a.frame.origin.x = x
-//      x += a.frame.width + minimumInteritemSpacing
-//      y = a.frame.maxY
-//    }
-//    return att
-//  }
-//}
 
 final class LeftAlignmentFlowLayout: UICollectionViewFlowLayout {
     

@@ -19,12 +19,14 @@
 		5D07504E2624662D0059D378 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D07504D2624662D0059D378 /* Bindable.swift */; };
 		5D07505C26249A1D0059D378 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D07505B26249A1D0059D378 /* MainNavigationController.swift */; };
 		5D0750632624B8B50059D378 /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0750622624B8B50059D378 /* CalendarEvent.swift */; };
-		5D0750662624BBA30059D378 /* MembersCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0750652624BBA30059D378 /* MembersCollectionView.swift */; };
+		5D0750662624BBA30059D378 /* LeftAlignmentFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0750652624BBA30059D378 /* LeftAlignmentFlowLayout.swift */; };
 		5D07506B2624D3100059D378 /* UICollectionViewDiffableDataSourceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D07506A2624D3100059D378 /* UICollectionViewDiffableDataSourceExtensions.swift */; };
 		5D07506E2624D3390059D378 /* SingleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D07506D2624D3390059D378 /* SingleSection.swift */; };
 		5D0750712624D5410059D378 /* MemberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0750702624D5410059D378 /* MemberCollectionViewCell.swift */; };
 		5D0750742624D5B40059D378 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0750732624D5B40059D378 /* Reusable.swift */; };
 		5D0750782624DDB10059D378 /* BindableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0750772624DDB10059D378 /* BindableCell.swift */; };
+		5D07507C2625662B0059D378 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D07507B2625662B0059D378 /* InformationView.swift */; };
+		5D07508026257F350059D378 /* CalendarEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D07507F26257F350059D378 /* CalendarEventView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,12 +44,14 @@
 		5D07504D2624662D0059D378 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		5D07505B26249A1D0059D378 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		5D0750622624B8B50059D378 /* CalendarEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
-		5D0750652624BBA30059D378 /* MembersCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersCollectionView.swift; sourceTree = "<group>"; };
+		5D0750652624BBA30059D378 /* LeftAlignmentFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignmentFlowLayout.swift; sourceTree = "<group>"; };
 		5D07506A2624D3100059D378 /* UICollectionViewDiffableDataSourceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewDiffableDataSourceExtensions.swift; sourceTree = "<group>"; };
 		5D07506D2624D3390059D378 /* SingleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSection.swift; sourceTree = "<group>"; };
 		5D0750702624D5410059D378 /* MemberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCollectionViewCell.swift; sourceTree = "<group>"; };
 		5D0750732624D5B40059D378 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		5D0750772624DDB10059D378 /* BindableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableCell.swift; sourceTree = "<group>"; };
+		5D07507B2625662B0059D378 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		5D07507F26257F350059D378 /* CalendarEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,18 +84,11 @@
 		5D07502A2624501F0059D378 /* onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				5D07508526258DC10059D378 /* CalendarEvent */,
 				5D075059262499C80059D378 /* App */,
 				5D075058262499AB0059D378 /* AppResorses */,
 				5D075050262493AE0059D378 /* Library */,
 				5D07505A262499E70059D378 /* Resources */,
-				5D07502F2624501F0059D378 /* CalendarEventViewController.swift */,
-				5D075040262454FE0059D378 /* DescriptionView.swift */,
-				5D0750622624B8B50059D378 /* CalendarEvent.swift */,
-				5D0750652624BBA30059D378 /* MembersCollectionView.swift */,
-				5D0750702624D5410059D378 /* MemberCollectionViewCell.swift */,
-				5D07505B26249A1D0059D378 /* MainNavigationController.swift */,
-				5D07504A262462450059D378 /* ViewRepresentable.swift */,
-				5D07506D2624D3390059D378 /* SingleSection.swift */,
 			);
 			path = onboarding;
 			sourceTree = "<group>";
@@ -99,9 +96,11 @@
 		5D075050262493AE0059D378 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				5D07508426258D7F0059D378 /* Utilities */,
 				5D0750542624940E0059D378 /* Protocols */,
 				5D075051262493B90059D378 /* Extension */,
 				5D075053262493EC0059D378 /* Generated */,
+				5D07508326258D340059D378 /* SharedUI */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -157,6 +156,61 @@
 				5D075034262450210059D378 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5D07508326258D340059D378 /* SharedUI */ = {
+			isa = PBXGroup;
+			children = (
+				5D07506D2624D3390059D378 /* SingleSection.swift */,
+			);
+			path = SharedUI;
+			sourceTree = "<group>";
+		};
+		5D07508426258D7F0059D378 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5D07504A262462450059D378 /* ViewRepresentable.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5D07508526258DC10059D378 /* CalendarEvent */ = {
+			isa = PBXGroup;
+			children = (
+				5D07505B26249A1D0059D378 /* MainNavigationController.swift */,
+				5D07502F2624501F0059D378 /* CalendarEventViewController.swift */,
+				5D07508626258DDA0059D378 /* UIViews */,
+			);
+			path = CalendarEvent;
+			sourceTree = "<group>";
+		};
+		5D07508626258DDA0059D378 /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				5D07507F26257F350059D378 /* CalendarEventView.swift */,
+				5D075040262454FE0059D378 /* DescriptionView.swift */,
+				5D07507B2625662B0059D378 /* InformationView.swift */,
+				5D0750622624B8B50059D378 /* CalendarEvent.swift */,
+				5D07508826258DFC0059D378 /* CollectionViewFlowLayout */,
+				5D07508726258DEB0059D378 /* CollectionViewCell */,
+			);
+			path = UIViews;
+			sourceTree = "<group>";
+		};
+		5D07508726258DEB0059D378 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5D0750702624D5410059D378 /* MemberCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		5D07508826258DFC0059D378 /* CollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				5D0750652624BBA30059D378 /* LeftAlignmentFlowLayout.swift */,
+			);
+			path = CollectionViewFlowLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +288,8 @@
 				5D0750302624501F0059D378 /* CalendarEventViewController.swift in Sources */,
 				5D07504526245D610059D378 /* UIViewExtensions.swift in Sources */,
 				5D07504E2624662D0059D378 /* Bindable.swift in Sources */,
-				5D0750662624BBA30059D378 /* MembersCollectionView.swift in Sources */,
+				5D0750662624BBA30059D378 /* LeftAlignmentFlowLayout.swift in Sources */,
+				5D07508026257F350059D378 /* CalendarEventView.swift in Sources */,
 				5D07504826245ECF0059D378 /* Assets.swift in Sources */,
 				5D0750712624D5410059D378 /* MemberCollectionViewCell.swift in Sources */,
 				5D0750742624D5B40059D378 /* Reusable.swift in Sources */,
@@ -242,6 +297,7 @@
 				5D075041262454FE0059D378 /* DescriptionView.swift in Sources */,
 				5D07506E2624D3390059D378 /* SingleSection.swift in Sources */,
 				5D07502C2624501F0059D378 /* AppDelegate.swift in Sources */,
+				5D07507C2625662B0059D378 /* InformationView.swift in Sources */,
 				5D0750782624DDB10059D378 /* BindableCell.swift in Sources */,
 				5D07502E2624501F0059D378 /* SceneDelegate.swift in Sources */,
 			);
